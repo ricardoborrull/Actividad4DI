@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:rowCount="1"
+    tools:context="com.example.a2dam.actividad4di.Actividad4DI"
+    android:weightSum="1">
+
+    <ToggleButton
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Fondo Blanco"
+        android:textOff="Fondo Rojo"
+        android:textOn="Fondo Blanco"
+        tools:text="Fondo Rojo"/>
+
+    <ToggleButton
+        android:id="@+id/letra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="ToggleButton"
+        android:textOff="Letras Rojas"
+        android:textOn="Letras Negras" />
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/mostrar"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Mostrar"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/moculto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Este es un mensaje oculto"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="Haz aquí un click largo"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/fondoRojo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:isIndicator="false"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:text="0/5"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
